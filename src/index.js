@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
-import App from './App';
-// import reportWebVitals from './reportWebVitals';
+
+import { RouterProvider } from "react-router-dom";
+import routes from 'routes'
+
+const App = () => {
+  return (
+    <div>
+      <h3>Welcome</h3>
+      <RouterProvider router={ routes }/>
+    </div>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
