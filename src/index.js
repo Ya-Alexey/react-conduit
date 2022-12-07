@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { RouterProvider } from "react-router-dom";
-import routes from 'routes'
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from 'routes';
+import TopBar from 'components/TopBar';
 
 const App = () => {
   return (
     <div>
       <h3>Welcome</h3>
-      <RouterProvider router={ routes }/>
+      <Router>
+        <TopBar />
+        <Routes/>
+      </Router>
     </div>
   )
 }
