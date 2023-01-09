@@ -7,12 +7,12 @@ import TopBar from 'components/TopBar';
 
 const App = () => {
   return (
-    <div>
+ 
       <Router>
         <TopBar />
         <Routes/>
       </Router>
-    </div>
+
   )
 }
 
